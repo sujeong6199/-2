@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        :root{
+            --delay:0.2;
+        }
+        body{
+            background-color: black;
+        }
+        #wrap{
+            width:282px; /*300-18(margin-right)*/
+            height: 80px;
+            margin: 200px auto;   
+            display: flex;
+            align-items: center;
+        }
+        .bar{
+            width:12px;
+            height: 80px;
+            float: left;
+
+            border-radius: 6px;
+            margin-right: 18px;
+            animation: sizechange calc(var(--delay) * 3.75s)  ease-in-out infinite alternate;
+        }
+        #wrap .bar:last-child{
+            
+            margin-right: 0;
+        }
+        #wrap .bar:nth-child(1),
+        #wrap .bar:nth-child(10){
+            background-color: blueviolet;
+            animation-delay: calc(var(--delay) * 5s)
+        }
+        #wrap .bar:nth-child(2),
+        #wrap .bar:nth-child(9){
+            background-color: orchid;
+            animation-delay: calc(var(--delay) * 4s)
+        }
+        #wrap .bar:nth-child(3),
+        #wrap .bar:nth-child(8){
+            background-color: beige;
+            animation-delay: calc(var(--delay) * 3s)
+        }
+        #wrap .bar:nth-child(4),
+        #wrap .bar:nth-child(7){
+            background-color: goldenrod;
+            animation-delay: calc(var(--delay) * 2s)
+        }
+        #wrap .bar:nth-child(5),
+        #wrap .bar:nth-child(6){
+            background-color: sandybrown;
+            animation-delay: calc(var(--delay) * 1s)
+            
+        }
+        
+        
+        
+  
+
+       @keyframes sizechange {
+        from{
+            height: 80px;
+        }
+        to{
+            height: 2px;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>
