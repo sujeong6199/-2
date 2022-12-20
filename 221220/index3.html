@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-group{
+            display: flex;
+            flex-direction: row;
+        
+        }
+        .card-group > .card:not(:last-child){
+            border-right: none;
+        }
+        .card-group > .card:first-child{
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .card-group > .card:first-child > img {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .card-group > .card:last-child{
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+        .card-group > .card:last-child > img {
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+        .card{
+            width:200px;
+            border:1px solid #DDD;
+        }
+        .card > img {
+            width:100%;
+        }
+       
+        .card-body{
+            padding: 10px;
+        }
+        .card-group:not(last-child){
+            border-right: 1px solid black;
+        }
+        .card-title {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+        .card-text{
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .card-text > small {
+            color:#888
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card-group">
+        <div class="card">
+            <img src="img/애플.png">
+            <div class="card-body">
+                <h5>Card-title1</h5>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/애플.png">
+            <div class="card-body">
+                <h5>Card-title2</h5>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/애플.png">
+            <div class="card-body">
+                <h5>Card-title3</h5>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
