@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background: url("img/x-mas.jpg");
+            clip-path: circle(30PX at 20% 20%);
+        }
+        #box2 {
+            width: 200px;
+            height: 200px;
+            background: url("img/x-mas.jpg");
+            clip-path: ellipse(50px 100px at 40% 40%);
+        }
+        #box3 {
+            float: left;
+            width: 365px;
+            height: 261px;
+            shape-outside: polygon(50% 0%, 66% 26%, 98% 35%, 78% 61%, 79% 91%, 51% 76%, 21% 91%, 24% 62%, 2% 35%, 31% 28%);
+            background: url("img/x-mas.jpg");
+            clip-path: polygon(50% 0%, 66% 26%, 98% 35%, 78% 61%, 79% 91%, 51% 76%, 21% 91%, 24% 62%, 2% 35%, 31% 28%);
+            transition: shape-outside 1s, clip-path 1s;
+        }
+        #box3:hover{
+            shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+        }
+        #box4{
+            float: left;
+            width: 365px;
+            height: 261px;
+            shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background: url("img/x-mas.jpg");
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            animation: box4 3s ease-in-out infinite alternate;
+        }
+        @keyframes box4{
+            0%{
+                shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            50%{
+                shape-outside: polygon(20% 0%, 59% 32%, 100% 100%, 0% 100%);
+                
+                clip-path: polygon(20% 0%, 59% 32%, 100% 100%, 0% 100%);  
+            }
+            100%{
+                shape-outside: polygon(20% 0%, 64% 57%, 100% 100%, 0% 100%);
+                
+                clip-path: polygon(20% 0%, 64% 57%, 100% 100%, 0% 100%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="box1"></div>
+        <P>AHS</P>   
+    </div>
+
+    <div id="box2"></div>
+    
+    <div>
+    <div id="box3">
+    </div>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.  
+        </p>
+    </div>
+    
+    <div>
+    <div id="box4">
+    </div>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+        </p>
+    
+    </div>
+</body>
+</html>

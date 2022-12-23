@@ -24,13 +24,48 @@
 
 <body>
     <div id="wrap">
-        <div class="row">
-            <span class="col-12" id="addon-wrapping">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
+        <form class="row">
+            <!--아이디-->
+            <div class="col-12">
+                <label for="inputId" class="form-label">아이디</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="inputEmail" id="inputId">
+                    <span class="input-group-text" id="inputEmail">@naver.com</span>
+                  </div>
+            <!--비밀번호-->
+            
+            <div class="col-12">
+                <label for="inputPw" class="form-label">비밀번호</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" aria-describedby="inputEmail" id="inputPw">
+                    <span class="input-group-text" id="inputEmail"><i class="bi bi-file-lock2-fill"></i></span>
+                  </div>
+            <!--비밃번호 재확인-->
+           
+            <div class="col-12">
+                <label for="inputPw2" class="form-label">비밀번호 재확인</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" aria-describedby="inputEmail" id="inputPw2">
+                    <span class="input-group-text" id="inputPw2l"><i class="bi bi-file-lock2-fill"></i></span>
+                  </div>
+            <!--이름-->
+            <div class="col-12">
+                <label for="input-Name" class="form-label">이름</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="inputEmail" id="input-Name">
+                    <span class="input-group-text" id="input-Name"></span>
+                  </div>
+            <!--셀렉트-->
+            <div class="col-12">
+                <label for="input-Gender" class="form-label">이름</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="inputEmail" id="input-Name">
+                    <span class="input-group-text" id="input-Name"></span>
+                  </div>
+            </div>
         </form>
     </div>
-
+</div>
 </body>
 
 </html>
