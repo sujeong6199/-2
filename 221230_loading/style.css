@@ -141,8 +141,101 @@ body {
 .loading-7:nth-of-type(3) {
     animation: loader-7 1s cubic-bezier(0.41, 0.25, 0.32, 0.83) 0.5s infinite;
 }
+.loadingwrap-8{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-8{
+    height: 10px;
+    width: 30px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white; 
+    opacity: 0.8; 
+    animation: loader-1 2s linear infinite; 
+}
+.loading-8:nth-of-type(2){
+      animation: loader-1 2s linear infinite reverse; 
+}
+.loadingwrap-9{
+    width: 30px;
+}
+.loading-9{
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    
+}
+.loading-9::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 5px;
+    height: 3px;
+    background-color: white;   
+    animation: loader-9 2s linear infinite; 
+}
 
-@keyframes loader-1 {
+.loading-10{
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    
+}
+.loading-10::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: white;   
+    animation: loader-10 3s linear infinite; 
+}
+.loadingwrap-11{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loading-11{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+    
+.loading-11::before,
+.loading-11::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: loader-11 4s cubic-bezier(0.41, 0.25, 0.32, 0.83)4s infinite; 
+    
+}
+
+.loading-11::after{
+    animation-delay: 2s;
+}
+
+
+
+
+    @keyframes loader-1 {
     0% {
         transform: rotate(0deg);
     }
@@ -195,3 +288,43 @@ body {
         opacity: 1;
     }
 }
+@keyframes loader-9 {
+    0% {
+       transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
+@keyframes loader-10 {
+    0% {
+      width: 0px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+@keyframes loader-11 {
+    0% {
+        top: 0;
+        left: 0;
+       
+    }
+    25%{
+        top: 0;
+        left: 25px;
+    }
+    50%{
+        top: 25px;
+        left: 25px;
+    }
+    100%{
+        top: 25px;
+        left: 0;
+    }
+    }
+
+
+
+
+
